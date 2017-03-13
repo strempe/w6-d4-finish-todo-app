@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <title>Todos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch,Array.prototype.includes"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="pikaday.css" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Todos</h1>
+        <hr />
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input id="todoItem" type="text" class="form-control" placeholder="Type a task description..."></input>
+                        <span class="input-group-btn">
+                            <button id="todoButton" class="btn btn-default" type="button">Add Task</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+              <div class="col-sm-2">
+                <select class="form-control selectpicker" id="category">
+                    <option>Work</option>
+                    <option>Home</option>
+                    <option>Personal</option>
+                    <option>Projects</option>
+                    <option>Leisure</option>
+                </select> 
+            </div>
+
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <input id="due_date" type="text" class="form-control" placeholder="Due Date"></input>
+                </div>
+            </div>
+             
+            <div class="row todo-list">
+                <div class="col-sm-12 list-group">
+              
+                    <ul id="todos" class="list-group">
+                    </ul>
+           
+                </div>
+            </div>
+          
+        </div>
+     
+   
+    </div>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+<script src="pikaday.js"></script>
+
+<script src="todos.js"></script>
+</body>
+</html>
+
